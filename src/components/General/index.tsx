@@ -1,6 +1,6 @@
-import Logo from "./Logo";
+
 import Header from "./Header";
 // import Footer from "./Footer";
-// import "./style.css";
+import "../../style/header.css";
 
-export { Logo, Header };
+export { Header };
