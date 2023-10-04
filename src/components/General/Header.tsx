@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import "../../style/header.css";
 
 import Search from "../Search/Search";
@@ -47,4 +48,21 @@ const Header = () => {
   );
 };
 
+=======
+import React from "react";
+import Logo from "../../assets/images/logo.png";
+
+const Header: React.FC = () => {
+    return (
+        <header className="header">
+            <div className="stiky__header">
+                <div className="logo__header">
+                    <img src={Logo} />
+                </div>
+            </div>
+        </header>
+    );
+};
+
+>>>>>>> artem
 export default Header;
