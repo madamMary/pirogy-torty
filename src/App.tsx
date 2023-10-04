@@ -1,12 +1,10 @@
-// import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/General/Header";
 import Catalog from "./pages/Catalog";
 import Info from "./pages/Info";
 import Basket from "./pages/Basket";
 import Main from "./pages/Main";
 import Footer from "./components/General/Footer";
-
-import { Routes, Route } from "react-router-dom";
 
 import "./App.css";
 
