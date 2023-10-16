@@ -1,11 +1,12 @@
 import "../../style/footer.css";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { Instagram, Telegram } from "react-bootstrap-icons";
+import { HashLink as Link } from 'react-router-hash-link';
 
 import Logo from "./Logo";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <footer>
       <div className="sticky__footer">
@@ -26,10 +27,10 @@ const Footer = () => {
 
         <div className="footer__about">
           <p>Про нас</p>
-          <Link to="/baker" className="footer__txt">
+          <Link to="/info#bakery" className="footer__txt">
             <p>О пекарне</p>
           </Link>
-          <Link to="/team" className="footer__txt">
+          <Link to="/info#team" className="footer__txt">
             <p>О команде</p>
           </Link>
         </div>

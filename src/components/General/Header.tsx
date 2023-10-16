@@ -1,22 +1,21 @@
-<<<<<<< HEAD
 import "../../style/header.css";
 
-import Search from "../Search/Search";
+// import Search from "../Search/Search";
 import Logo from "./Logo";
 
 import { Cart } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <header className="header">
       <div className="stiky__header col-12">
         <div className="logo__header">
           <Logo />
         </div>
-        <div className="search__header">
+        {/* <div className="search__header">
           <Search />
-        </div>
+        </div> */}
 
         <div className="info__header">
           <div className="info__main">
@@ -48,5 +47,4 @@ const Header = () => {
   );
 };
 
->>>>>>>>> Temporary merge branch 2
 export default Header;
