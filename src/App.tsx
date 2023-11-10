@@ -1,20 +1,29 @@
 import { Routes, Route } from "react-router-dom";
-import Header from "./components/General/Header";
-import Catalog from "./pages/Catalog";
-import Main from "./pages/Main";
+import Header from "./commons/components/Header";
+import Catalog from "./components/Catalog/Catalog";
+import Info from "./components/Info/Info";
+import Basket from "./components/Basket/Basket";
+import Home from "./components/Home/Home";
+import Footer from "./commons/components/Footer";
+import "./assets/scss/index.scss";
 
-import "./App.css";
+const App = () => {
+  return (
+    <>
+      <Header />
 
-const App: React.FC = () => {
-    return (
-        <>
-            <Header />
-            <Routes>
-                <Route path="/" element={<Main />} />
-                <Route path="/catalog" element={<Catalog />} />
-            </Routes>
-        </>
-    );
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/catalog" element={<Catalog />} />
+          <Route path="/info" element={<Info />} />
+          <Route path="/basket" element={<Basket />} />
+        </Routes>
+      </main>
+
+      <Footer />
+    </>
+  );
 };
 
 export default App;

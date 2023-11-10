@@ -1,0 +1,31 @@
+header {
+  background: #e1ede6;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 25px 0;
+  gap: 150px;
+  font-weight: 500;
+
+  &__logo {
+    display: flex;
+
+    img {
+      width: 200px;
+    }
+  }
+
+  &__info {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 75px;
+
+    a {
+      color: #3a3a3a;
+    }
+  }
+}
