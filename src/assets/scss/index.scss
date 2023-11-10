@@ -1,0 +1,36 @@
+@import "./components/layout";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/home";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+object embed,
+object img,
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+  color: #93611f
+}
+
+html,
+body {
+    padding-top: 0;
+    font-family: "Roboto", sans-serif;
+    color: rgb(49, 49, 49);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
